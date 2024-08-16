@@ -1,0 +1,23 @@
+{
+  "name": "web-jpdict",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "compile": "npx browserify './src/app.js' -o './public/js/app.js'",
+    "watch": "npx watchify './src/app.js' -o './public/js/app.js'",
+    "browser-sync": "npx browser-sync start --server 'public' --port 5000 --files 'public'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "browser-sync": "^3.0.2",
+    "browserify": "^17.0.0",
+    "watchify": "3.11.1"
+  },
+  "dependencies": {
+    "@sglkc/kuromoji": "^1.1.0"
+  }
+}
